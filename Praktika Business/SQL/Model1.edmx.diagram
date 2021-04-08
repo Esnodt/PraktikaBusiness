@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="3b58704f75ca4ed893b094a33a65d4a4" Name="Diagram1">
+        <EntityTypeShape EntityType="BusinessModel.Client" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="BusinessModel.Company" Width="1.5" PointX="0.75" PointY="1.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="BusinessModel.MainTable" Width="1.5" PointX="5.25" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="BusinessModel.Order" Width="1.5" PointX="8.375" PointY="1.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="BusinessModel.Resources" Width="1.5" PointX="4.5" PointY="4.125" IsExpanded="true" />
+        <AssociationConnector Association="BusinessModel.FK_IDClient_MainTable_Client_ID" ManuallyRouted="false" />
+        <AssociationConnector Association="BusinessModel.FK_IDCompany_Client_Company_ID" ManuallyRouted="false" />
+        <AssociationConnector Association="BusinessModel.FK_IDOrder_MainTable_Order_ID" ManuallyRouted="false" />
+        <AssociationConnector Association="BusinessModel.FK_IDResources_MainTable_Resources_ID" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

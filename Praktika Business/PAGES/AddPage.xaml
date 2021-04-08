@@ -1,0 +1,157 @@
+﻿<Page x:Class="Praktika_Business.PAGES.AddPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Praktika_Business.PAGES"
+      mc:Ignorable="d" 
+      d:DesignHeight="1080" d:DesignWidth="1920"
+      Title="AddPage">
+
+    <Page.Resources >
+        <Style TargetType="TextBox">
+            <Setter Property="Width" Value="250"/>
+            <Setter Property="Height" Value="40"/>
+            <Setter Property="Background" Value="White"/>
+            <Setter Property="BorderBrush" Value="Black"/>
+            <Setter Property="BorderThickness" Value="2px"/>
+            <Setter Property="Padding" Value="5 5 5 5"/>
+            <Setter Property="Margin" Value="0 0 0 0"/>
+            <Setter Property="FontFamily" Value="Bahnschrift Light"/>
+
+
+
+
+
+
+
+        </Style>
+
+
+    </Page.Resources>
+
+
+
+    <Grid Background="White">
+
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="100"/>
+        </Grid.RowDefinitions>
+
+        <Grid>
+
+
+            <StackPanel Grid.Row="0" HorizontalAlignment="Center" Margin="0 100 0 0">
+
+                <Label Content="Страница добавления заказа" FontSize="35" FontFamily="Microsoft YaHei UI"/>
+
+            </StackPanel>
+            
+
+            <StackPanel HorizontalAlignment="Left" Margin="15 15 0 0">
+
+                <Button x:Name="ButtonBack" Width="100" Content="Выход" Click="ButtonBack_Click"/>
+
+            </StackPanel>
+
+            <StackPanel Orientation="Vertical" Grid.Row="0" HorizontalAlignment="Left" Margin="20 200 0 0" VerticalAlignment="Center">
+
+                <StackPanel Margin="0 0 0 15">
+                    <Label Content="Название компании"/>
+                    <TextBox x:Name="tbCompanyName"/>
+                </StackPanel>
+
+                <StackPanel Margin="0 0 0 15">
+                    <Label Content="Отдел исполнителей"/>
+                    <TextBox x:Name="tbPerformersDepartment"/>
+                </StackPanel>
+
+                <StackPanel Margin="0 0 0 15">
+                    <Label Content="Номер исполнителей"/>
+                    <TextBox x:Name="tbPhoneNumberOfPerformers"/>
+                </StackPanel>
+
+                <StackPanel Margin="0 0 0 15">
+                    <Label Content="Количество часов для выполнение заказа"/>
+                    <TextBox x:Name="tbHoursToCompleteTheOrder"/>
+                </StackPanel>
+
+                <StackPanel Margin="0 0 0 15">
+                    <Label Content="Ответственный за заказ"/>
+                    <TextBox x:Name="tbResponsibleForTheOrder"/>
+                </StackPanel>
+
+            </StackPanel>
+
+
+            <StackPanel Orientation="Vertical" Grid.Row="0" HorizontalAlignment="Center" Margin="0 200 0 0" VerticalAlignment="Center">
+
+                <StackPanel Margin="0 0 0 15">
+                    <Label Content="Имя клиента"/>
+                    <TextBox x:Name="tbFullName"/>
+                </StackPanel>
+
+                <StackPanel Margin="0 0 0 15">
+                    <Label Content="Адрес доставки"/>
+                    <TextBox x:Name="tbDeliveryAddress"/>
+                </StackPanel>
+
+                <StackPanel Margin="0 0 0 15">
+                    <Label Content="Телефон заказчика"/>
+                    <TextBox x:Name="tbTelephone"/>
+                </StackPanel>
+
+                <StackPanel Margin="0 0 0 15">
+                    <Label Content="Номер факса"/>
+                    <TextBox x:Name="tbFaxNumber"/>
+                </StackPanel>
+
+                <StackPanel Margin="0 0 0 15">
+                    <Label Content="Дата доставки"/>
+                    <DatePicker x:Name="tbOrderCompletionDate"/>
+                </StackPanel>
+                
+            </StackPanel>
+
+
+            <StackPanel Orientation="Vertical" Grid.Row="0" HorizontalAlignment="Right" Margin="0 200 20 0" VerticalAlignment="Center">
+
+                <StackPanel Margin="0 0 0 15">
+                    <Label Content="Название продукта"/>
+                    <TextBox x:Name="tbProduct"/>
+                </StackPanel>
+
+                <StackPanel Margin="0 0 0 15">
+                    <Label Content="СтоимостьCost"/>
+                    <TextBox x:Name="tbCost"/>
+                </StackPanel>
+
+                <StackPanel Margin="0 0 0 15">
+                    <Label Content="Производитель"/>
+                    <TextBox x:Name="tbManufacturer"/>
+                </StackPanel>
+
+                <StackPanel Margin="0 0 0 15">
+                    <Label Content="Серийный номер"/>
+                    <TextBox x:Name="tbSerialNumber"/>
+                </StackPanel>
+
+                <StackPanel Margin="0 0 0 15">
+                    <Label Content="Дата получения заказа"/>
+                    <DatePicker x:Name="tbDateOfReceiptOfTheOrder"/>
+                </StackPanel>
+
+            </StackPanel>
+
+
+
+        </Grid>
+
+        <StackPanel Grid.Row="1"   Orientation="Horizontal" HorizontalAlignment="Center">
+            <Button Margin="15"  Content="Добавить" Click="Button_Click"/>
+            <Button Margin="15" Content="Очистить поля" x:Name="deletebutton" Click="deletebutton_Click"/>
+
+        </StackPanel>
+    </Grid>
+</Page>
